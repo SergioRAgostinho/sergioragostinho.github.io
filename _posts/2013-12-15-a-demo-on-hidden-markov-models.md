@@ -7,6 +7,8 @@ tags: [markov, hmm, estimation, phd, localization]
 categories: [posts]
 ---
 
+<sub>*The code for this demo is available [here][code]*</sub>
+
 Hello all,
 
 Today I bring you some of the latests interesting projects I have been dealing with. In one of the courses I'm currently attending "Estimation and Classification", we were asked to solve the following toy problem:
@@ -55,6 +57,7 @@ Hope you enjoyed it,
 
 Sérgio
 
+[code]: https://github.com/SergioRAgostinho/ECProject
 [hmm]: https://en.wikipedia.org/wiki/Hidden_Markov_model
 [baum]: https://en.wikipedia.org/wiki/Baum%E2%80%93Welch_algorithm#Forward_procedure
 [goncalo]: http://academiafa.academia.edu/Gon%C3%A7aloCruz
