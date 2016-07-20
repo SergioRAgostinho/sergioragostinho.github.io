@@ -65,7 +65,7 @@ google_ad_slot           :
 author:
   name             : "Sérgio Agostinho"
   avatar           : "sergio-photo.jpg"
-  bio              : "PhD Student in Structure from Motion. Point Cloud Library maintainer. Music entusiast."
+  bio              : "PhD Student in Structure from Motion. Point Cloud Library maintainer. Music enthusiast."
   location         : "Lisbon, Portugal"
   email            : 
   uri              :
@@ -91,6 +91,7 @@ author:
   weibo            :
   xing             :
   youtube          :
+  mixcloud         : sergioagostinho
 
 
 # Reading Files
@@ -151,7 +152,7 @@ kramdown:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: +3843-00908 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -209,12 +210,28 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  0xff-beat:
+    output: true
+    permalink: /:collection/:path/
+
 # Defaults 
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # 0xff beat
+  - scope:
+      type: 0xff-beat
     values:
       layout: single
       author_profile: true

@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "Blog"
+    url: "#"
 
-  - title: "Sample Navigation Link 2"
-    url: /
+  - title: "0xFF Beat Podcast"
+    url: "/0xff-beat/"

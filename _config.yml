@@ -119,6 +119,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  mixcloud         : sergioagostinho
 
 
 # Reading Files
@@ -245,3 +246,33 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Collections
+collections:
+  0xff-beat:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # 0xff beat
+  - scope:
+      type: 0xff-beat
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
