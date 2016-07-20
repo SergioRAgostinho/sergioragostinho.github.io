@@ -1,1 +1,3 @@
-- [ ] Page for listing all tags and categories
+- [ ] 0xFF beat page
+- [ ] Improve page for listing all tags and categories
+- [x] Page for listing all tags and categories

@@ -1,7 +1,8 @@
 ---
-title: 0xFF beat episode 1
-tags: [0xff-beat, podcast, rap, trap, hip-hop]
-categories: [0xff-beat]
+title: Episode 1
+tags: [rap, trap, hip-hop]
+header: 
+  teaser: "0xff-beat/ep1-teaser.jpg"
 ---
 
 First episode of my podcast. Expect some Trap/Rap/Hip-Hop awesomeness!
