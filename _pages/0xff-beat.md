@@ -13,7 +13,7 @@ header:
 {% include base_path %}
 
 <div class="grid__wrapper">
-  {% for post in site.0xff-beat %}
+  {% for post in site.0xff-beat reversed %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
