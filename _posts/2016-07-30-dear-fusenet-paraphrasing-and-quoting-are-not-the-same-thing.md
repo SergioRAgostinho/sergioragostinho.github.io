@@ -3,7 +3,11 @@ title: Dear FuseNet, paraphrasing and quoting are not the same thing
 date: 2016-07-30
 tags: [news, media, fusenet]
 categories: [posts]
+excerpt: "Hi everyone. Today's post is meant to bring your attention to a problem that occasionally happens when people give interviews or are requested to provide testimonies. It is not rare to hear stories about how the original content got completely mangled and twisted by the authors that produced the final article/story."
 ---
+
+**Edit:**
+*FuseNet, unpublished the [page][post]. Something is happening. Let's hope for the best.*
 
 Hi everyone. Today's post is meant to bring your attention to a problem that occasionally happens when people give interviews or are requested to provide testimonies. It is not rare to hear stories about how the original content got completely mangled and twisted by the authors that produced the final article/story. Today, I found out I was a victim of this unfortunate lack of professionalism.
 
