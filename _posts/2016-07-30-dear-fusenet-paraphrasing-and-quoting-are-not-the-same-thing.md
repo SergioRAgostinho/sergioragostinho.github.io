@@ -1,15 +1,26 @@
 ---
-title: Dear FuseNet, paraphrasing and quoting are not the same thing
+title: Paraphrasing and quoting are not the same thing
 date: 2016-07-30
-tags: [news, media, fusenet]
+tags: [news, media, rant]
 categories: [posts]
 excerpt: "Hi everyone. Today's post is meant to bring your attention to a problem that occasionally happens when people give interviews or are requested to provide testimonies. It is not rare to hear stories about how the original content got completely mangled and twisted by the authors that produced the final article/story."
 ---
-
+<!-- 
 **Edit:**
-*FuseNet, unpublished the [page][post]. Something is happening. Let's hope for the best.*
+*FuseNet, unpublished the [page][post]. Something is happening. Let's hope for the best.* -->
 
-Hi everyone. Today's post is meant to bring your attention to a problem that occasionally happens when people give interviews or are requested to provide testimonies. It is not rare to hear stories about how the original content got completely mangled and twisted by the authors that produced the final article/story. Today, I found out I was a victim of this unfortunate lack of professionalism.
+<sub>"Hmmm... This looks slightly different." Yep, read on.</sub>
+
+Hi everyone. Today's post is meant to bring your attention to a problem that occasionally happens when people give interviews or are requested to provide testimonies. It is not rare to hear stories about how the original content got completely mangled and twisted by the authors that produced the final article/story. The same happened to me with a testimony I gave. The author which published pieces of my testimony, paraphrased me throughout his post, but conveyed the idea that it was in fact a quote. For those of you who don't know the difference between both you can check a brief explanation [here](http://www.plagiarism.org/citing-sources/how-to-paraphrase/).
+
+Upon reading the publication, I was very upset, some may argue a little too much. I wanted to contact the author but had no direct way of doing so, ending up writing this post, originally describing the issue in detail and as a way of publicly manifesting my frustration with what had happened. I then proceeded to the social networks, spamming all the pages I could find of the organization which published the content, asking for a written apology and amends to the post. I was basically trying everything in my reach to call their attention to the issue. It worked.
+
+Two days later the author of post contacted me with a written apology, regretting what had happened and showing strong will to make things right. Above all, he wanted made it clear that it was his **personal mistake** and that he did not want to see the reputation of the organization he represented tarnished because of it, thus driving **the massive rework this post received**. I didn't delete it due to some technicalities, but I also because wanted to use it as a way to raise your awareness to the fact that things like this happen. It's your public image that is at stake and you're the person responsible for ensuring that you're accurately portrayed to the world. 
+
+Sérgio
+
+<!-- 
+Today, I found out I was a victim of this unfortunate lack of professionalism.
 
 From 20th to the 23rd of June, I attended the [Crash Course on Parallel Computing for Fusion - 24h Técnico.Ulisboa][course], hosted by the  [Instituto de Plasmas e Fusão Nuclear][ipfn] (IPFN), at [Instituto Superior Técnico][ist]. The workshop was organized by IPFN and was advertised on [FuseNet][fusenet].
 
@@ -21,7 +32,7 @@ Below, I present both the content that was published on FuseNet and the testimon
 *Picture by [Alex E. Proimos](https://www.flickr.com/photos/proimos/)*
 
 I'm hoping to see this issue cleared, the post amended and to receive a written apology from its author. Make me proud FuseNet, I'm waiting. Time to spam the social networks.
-
+ --><!-- 
 # The FuseNet post
 
 The post can be checked [here][post]. I took a [snapshot](/images/posts/fusenet-post.png) of the page, just in case it (hopefully) gets edited at some point, so that this rant doesn't lose its context. Nevertheless, let's focus on what was published **as my own words**. I took the liberty to highlight in bold some of the blatant editorials.
@@ -44,7 +55,7 @@ Here's the [original file](/assets/pdf/sagostinho_testimony.pdf) I handed for be
 > 
 > In this day and age, where parallel computational devices are ubiquitous, this course should be considered mandatory for any entry level developer looking to work in highly intensive computing applications. I you have the opportunity to take it, don't miss the chance.
 
-
+ -->
 
 
 [course]: http://www.fusenet.eu/node/1095
