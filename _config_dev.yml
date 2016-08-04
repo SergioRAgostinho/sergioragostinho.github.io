@@ -233,7 +233,7 @@ defaults:
   - scope:
       type: 0xff-beat
     values:
-      layout: single
+      layout: 0xff-beat-post
       author_profile: true
       comments: true
       share: true

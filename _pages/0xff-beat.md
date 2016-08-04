@@ -12,7 +12,11 @@ header:
 
 {% include base_path %}
 
-<div class="grid__wrapper">
+{% include 0xff-beat-subscribe.html %}
+
+<br>
+
+<div class="grid__wrapper" style="display:inline-block;">
   {% for post in site.0xff-beat reversed %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
