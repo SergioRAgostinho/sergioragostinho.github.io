@@ -2,7 +2,7 @@
 layout: archive
 permalink: "/0xff-beat/"
 author_profile: true
-title: "0xff Beat Podcast"
+title: "0xff beat Podcast"
 excerpt: "Sharing the <3 for Drum Machines and Bass Culture."
 header: 
   overlay_image: 0xff-beat-banner.jpg
