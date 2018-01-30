@@ -4,7 +4,7 @@ location: Lisbon, Portugal
 excerpt: Lately, I've been trying to compile numerous Visual SLAM and/or SfM implementations whose source code is publicly available. It has been troublesome, to say the least, and therefore I'm sharing the successful cases, detailing the steps involved.
 date: 2013-09-08 03:39
 tags: [ptam, slam, computer vision]
-categories: [tutorials]
+# categories: [tutorials]
 ---
 
 Hello all,
