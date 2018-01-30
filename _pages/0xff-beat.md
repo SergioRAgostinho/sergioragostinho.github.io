@@ -10,14 +10,13 @@ header:
   cta_url: https://www.mixcloud.com/0xff-beat/
 ---
 
-{% include base_path %}
-
 {% include 0xff-beat-subscribe.html %}
 
 <br>
 
-<div class="grid__wrapper" style="display:inline-block;">
-  {% for post in site.0xff-beat reversed %}
+<div class="grid__wrapper">
+  {% assign sorted = site.off-beat | reverse %}
+  {% for post in sorted %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
