@@ -1,0 +1,59 @@
+---
+layout: single
+permalink: "/cv"
+author_profile: true
+title: "Curriculum Vitae"
+toc: true
+toc_label: "Contents"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: "/assets/images/cv/cv-splash.jpg"
+  caption: "credits: [CREATIVE SPACES](http://www.creativespaces.net.au/find-a-space/guild-cowork-8)"
+---
+{% assign cv = site.data.cv %}
+
+<h2 id="experience">Experience</h2>
+
+{% for item in cv.experience %}
+	<div class="wrapper">
+		<div class="display-inline-block">
+			<img class="align-left" src="{{ item.icon}}">
+			<div class="align-left">
+				<span class="color-darker-gray">{{ item.title }}</span>
+				<br>
+				<span class="color-light-gray">
+					{{ item.company }}
+					<br>
+					{{ item.location }}
+					<br>
+					{{ item.date.begin }} - {{ item.date.end }}
+				</span>
+			</div>
+		</div>
+		<p class="clear color-gray">{{ item.description }}</p>
+	</div>
+	<hr>
+{% endfor %}
+
+<h2 id="education">Education</h2>
+
+{% for item in cv.education %}
+	<div class="wrapper">
+		<div class="display-inline-block">
+			<img class="align-left" src="{{ item.icon}}">
+			<div class="align-left">
+				<span class="color-darker-gray">{{ item.title }}</span>
+				<br>
+				<span class="color-light-gray">
+					{{ item.institution }}
+					<br>
+					{{ item.location }}
+					<br>
+					{{ item.date.begin }} - {{ item.date.end }}
+				</span>
+			</div>
+		</div>
+		<p class="clear color-gray"></p>
+	</div>
+{% endfor %}
