@@ -1,0 +1,54 @@
+experience:
+  - title: "Computer Vision / Augmented Reality Intern"
+    company: "Bosch North America"
+    icon: "/assets/images/logos/bosch.jpg"
+    location: "Palo Alto, California, USA"
+    date:
+      begin: "2016 Aug"
+      end: "2017 Mar"
+    description: "Model based object tracking with texture-less and highly reflective objects."
+  - title: "Software Engineer Trainee"
+    company: "European Space Agency"
+    icon: "/assets/images/logos/esa.png"
+    location: "Noordwijk, South Holland, The Netherlands"
+    date:
+      begin: "2014 Apr"
+      end: "2016 Mar"
+    description: "Multimedia communications. Augmented Reality."
+  - title: "Software Engineer"
+    company: "Lusospace"
+    icon: "/assets/images/logos/lusospace.png"
+    location: "Lisbon, Portugal"
+    date:
+      begin: "2012 Nov"
+      end: "2013 Aug"
+    description: "Sensor Fusion. Ego pose tracking. Augmented Reality."
+  - title: "Junior Developer"
+    company: "BIN - Buy It Now Lda."
+    icon: "/assets/images/logos/bin.png"
+    location: "Lisbon, Portugal"
+    date:
+      begin: "2011 Nov"
+      end: "2012 Oct"
+    description: "Full stack development."
+
+education:
+  - title: "Ph.D. in Computer Vision"
+    institution: "Técnico Lisboa, Universidade de Lisboa"
+    icon: "/assets/images/logos/ist.jpg"
+    location: "Lisbon, Portugal"
+    date:
+      begin: "2016"
+      end: "Present"
+  - title: "MSc. in Aerospace Engineer"
+    institution: "Técnico Lisboa, Universidade de Lisboa"
+    icon: "/assets/images/logos/ist.jpg"
+    location: "Lisbon, Portugal"
+    date:
+      begin: "2004"
+      end: "2013"
+
+voluntary:
+
+skills:
+
