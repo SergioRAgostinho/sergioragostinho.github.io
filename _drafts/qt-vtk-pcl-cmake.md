@@ -6,14 +6,16 @@ date: 2016-07-13
 tags: [qt, vtk, pcl, cmake]
 categories: [tutorials]
 output: false
+toc: true
+toc_label: "Contents"
 ---
 
-# Introduction
+## Introduction
 
-Hi everyone. The purpose of this tutorial is to exemplify how to integrate your [Point Cloud Library][pcl] (PCL) visualization code into [Qt][qt]. 
+Hi everyone. The purpose of this tutorial is to exemplify how to integrate your [Point Cloud Library][pcl] (PCL) visualization code into [Qt][qt].
 It's been a while since I started thinking I should learn something about Qt, and I also want to address a number of questions that occasionally pop in pcl-users mailing list, on how to compile projects that integrate PCL and Qt specific code. Our goto response is always to "handle everything through [CMake][cmake]", but people seem to be somewhat reluctant of going down that path. I'm hoping this provides a simple and quick boilerplate that allows everyone to have their projects up and running in no time.
 
-[Qt][qt] is a powerful cross-platform graphical user interface (GUI) framework, which allows developers to quickly create cross-platform GUI applications with relative ease, by abstracting them from the complexity of having to do platform dependent code. 
+[Qt][qt] is a powerful cross-platform graphical user interface (GUI) framework, which allows developers to quickly create cross-platform GUI applications with relative ease, by abstracting them from the complexity of having to do platform dependent code.
 
 [VTK][vtk] is a cross-platform visualization framework but most importantly, it is the back end of the [```pcl::visualization```][pcl_vis] module. VTK is very powerful and provides extensive functionalities to visualize 2D and 3D data, the latter being clearly the most relevant in PCL, as well as providing interaction with keyboard and mouse controllers.
 
@@ -21,13 +23,13 @@ At this point you might be asking - "If VTK is already that good, why do I also 
 
 The interaction between VTK and Qt is made possible through the [Qt plugin system](http://doc.qt.io/qt-5/plugins-howto.html), and it is implemented by [QVTKWidget](https://fossies.org/dox/VTK-7.0.0/classQVTKWidget.html).
 
-# Setting things up
+## Installing Dependencies
 
 Before we begin I feel its important to make the following disclaimer: throughout my early experiments, I noticed that **things vary somewhat along different versions of Qt, VTK and CMake combined**. This means that some of the things I might state in the tutorial might not be applicable to the particular version you might have on your development environment, and I'm too lazy to cover all cases, especially considering that I cannot actually test them. Fortunately there are a number of resources you check in the web and I list a number of them at the [end of the post](#refs).
 
 To start off we need PCL, VTK, Qt and CMake and given that we're working on a Mac, let's use [Homebrew][brew] to ease up that job.
 
-## Homebrew
+### Homebrew
 
 To install Homebrew follow the instructions provided on their [website][brew], that at the time of writing this tutorial is done by launching your terminal and executing the following line.
 
@@ -35,9 +37,9 @@ To install Homebrew follow the instructions provided on their [website][brew], t
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-If you want to know more about what that does, their [homepage][brew] pretty much covers it all. 
+If you want to know more about what that does, their [homepage][brew] pretty much covers it all.
 
-## All in one go
+### All in one go
 
 In theory if you issue the following command
 
@@ -47,7 +49,7 @@ $ brew install pcl --with-qt
 
 this will ensure PCL, CMake, VTK and Qt4 are all installed, since the they're all dependencies of PCL. I haven't exactly tested this, since I installed each manually at some point in the past and I tend to work with the git-master when it comes to PCL. Nevertheless, the following sections detail each of the dependencies individually and I specifically state which version I have on my development environment.
 
-## CMake
+### CMake
 
 ```shell
 $ brew install cmake
@@ -77,7 +79,7 @@ Emacs Lisp files have been installed to:
 
 I'm running CMake 3.4.1.
 
-## Qt
+### Qt
 
 ```shell
 $ brew install qt
@@ -120,7 +122,7 @@ Run `brew linkapps qt` to symlink these to /Applications.
 
 I'm running a (Homebrew) patched version of Qt 4.8.7. Take notice of the where Qt got installed to ```/usr/local/Cellar/qt/4.8.7_1```, since we'll need to copy VTK's widget into its designer's plugin folder in the near future.
 
-## VTK
+### VTK
 
 ```shell
 $ brew install vtk --with-qt
@@ -187,7 +189,7 @@ $ cp /usr/local/Cellar/vtk/6.3.0/plugins/designer/libQVTKWidgetPlugin.dylib /usr
 
 *Your paths might be slightly different due to **different versions** of VTK and/or Qt.*
 
-## PCL
+### PCL
 
 ```shell
 $ brew install pcl --with-qt
@@ -227,7 +229,7 @@ Optional: qt ✘, qt5 ✘, openni ✔, openni2 ✔
 
 For PCL, I'm compiling the trunk from source and that's why Homebrew is reporting it as uninstalled. Nevertheless, version 1.8.0 (and likely others prior to it) should be acceptable. 
 
-# Qt Designer
+## Qt Designer
 
 Time to do pretty things! Locate your Qt Designer app:
 

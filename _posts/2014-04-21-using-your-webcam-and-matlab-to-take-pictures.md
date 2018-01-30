@@ -4,10 +4,10 @@ location: Lisbon, Portugal
 excerpt: I've been messing around with some topics which had me implement some intermediate tools in MATLAB that might just be useful to some of you. Sharing is caring.
 date: 2014-04-21 19:24
 tags: [matlab]
-categories: [tutorials]
+# categories: [tutorials]
 ---
 
-Hey all, 
+Hey all,
 
 I've been messing around with some topics which had me implement some intermediate tools in MATLAB that might just be useful to some of you. Sharing is caring.
 
@@ -68,4 +68,4 @@ end
 
 Notice that in the end I actually store my images in grayscale, so simply remove the line invoking ```rbg2gray``` in case you want colored pictures. Finally, here's a screenshot on how things should like on your screen if everything went as expected.
 
-![](/images/posts/sstaker.jpg)
+![](/assets/images/posts/sstaker.jpg)

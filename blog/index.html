@@ -1,0 +1,20 @@
+---
+layout: archive
+author_profile: true
+title: "Blog"
+excerpt: "A collection of things I find interesting to share with the world"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: "/assets/images/blog.jpg"
+  caption: "credits: [mpclemens](https://www.flickr.com/photos/mpclemens/4047950182/)"
+---
+
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}

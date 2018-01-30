@@ -19,7 +19,9 @@ url                      : http://sergioagostinho.com # the base hostname & prot
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
+breadcrumbs_home_label   : "Home"
+breadcrumbs_separator    : "/"
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
@@ -117,6 +119,72 @@ author:
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   mixcloud         : "sérgio-agostinho"
 
+# Collections
+collections:
+  off-beat:
+    output: true
+    permalink: /0xff-beat/:path/
+
+# Defaults
+defaults:
+  # all pages
+  - scope:
+      type: pages
+    values:
+      author_bio: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      author_bio: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      permalink: /blog/:path/
+  # 0xff beat
+  - scope:
+      type: off-beat
+    values:
+      layout: 0xff-beat-post
+      author_profile: true
+      author_bio: true
+      comments: true
+      share: true
+      related: true
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+# category_archive:
+#   type: liquid
+#   path: /categories/
+# tag_archive:
+#   type: liquid
+#   path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
 
 # Reading Files
 include:
@@ -182,9 +250,9 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page-:num/
 timezone: +3843-00908 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -195,7 +263,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  # - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -204,36 +271,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  # - jekyll-archives
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
 
 # HTML Compression
@@ -242,32 +279,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-# Collections
-collections:
-  off-beat:
-    output: true
-    permalink: /0xff-beat/:path/
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # 0xff beat
-  - scope:
-      type: off-beat
-    values:
-      layout: 0xff-beat-post
-      author_profile: true
-      comments: true
-      share: true
-      related: true
