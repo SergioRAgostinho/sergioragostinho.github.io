@@ -71,7 +71,14 @@ awards:
     entity: "Department of Electrical and Computer Engineering - Técnico Lisboa"
     date: "2013 Sep"
 
-voluntary:
-
 skills:
-
+  fields:
+    - "Computer Vision"
+    - "Machine Learning"
+    - "Software development"
+  languages:
+    - "C++/C"
+    - "Python"
+    - "MATLAB"
+  frameworks:
+    - "Point Cloud Library"
