@@ -36,6 +36,22 @@ header:
 	<hr>
 {% endfor %}
 
+<h2 id="publications">Publications</h2>
+
+{% for item in cv.publications %}
+	<div class="wrapper">
+		<span class="color-darker-gray">{{ item.title }}</span>
+		<br>
+		<span class="color-light-gray">
+			{{ item.publisher }}
+			<br>
+			{{ item.date }} - <a href="{{ item.url }}">url</a>
+		</span>
+		<p class="clear color-gray"></p>
+	</div>
+	<hr>
+{% endfor %}
+
 <h2 id="education">Education</h2>
 
 {% for item in cv.education %}
@@ -56,4 +72,20 @@ header:
 		</div>
 		<p class="clear color-gray"></p>
 	</div>
+{% endfor %}
+
+<h2 id="awards">Awards</h2>
+
+{% for item in cv.awards %}
+	<div class="wrapper">
+		<span class="color-darker-gray">{{ item.title }}</span>
+		<br>
+		<span class="color-light-gray">
+			{{ item.entity }}
+			<br>
+			{{ item.date }}
+		</span>
+		<p class="clear color-gray"></p>
+	</div>
+	<hr>
 {% endfor %}

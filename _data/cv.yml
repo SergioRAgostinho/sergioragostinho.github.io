@@ -1,4 +1,12 @@
 experience:
+  - title: "Machine Learning Teaching Assistant"
+    company: "Técnico Lisboa, Universidade de Lisboa"
+    icon: "/assets/images/logos/ist.jpg"
+    location: "Lisbon, Portugal"
+    date:
+      begin: "2017 Sep"
+      end: "2018 Feb"
+    description: "Supported the lab component of the course."
   - title: "Computer Vision / Augmented Reality Intern"
     company: "Bosch North America"
     icon: "/assets/images/logos/bosch.jpg"
@@ -47,6 +55,21 @@ education:
     date:
       begin: "2004"
       end: "2013"
+
+publications:
+  - title: "Augmented Reality for the Support of Space Exploration Missions and On-Ground/On-Orbit Operations"
+    publisher: "Advances in Human Factors and System Interactions: Proceedings of the AHFE 2016 International Conference on Human Factors and System Interactions / Springer International Publishing"
+    date: "2016 Jul"
+    url: "https://doi.org/10.1007/978-3-319-41956-5_14"
+  - title: "On-line Detection and Estimation of Gaseous Point Sources Using Sensor Networks"
+    publisher: "Proceedings of the 22nd European Signal Processing Conference (EUSIPCO)"
+    date: "2014 Sep"
+    url: "http://ieeexplore.ieee.org/abstract/document/6952294/"
+
+awards:
+  - title: "Best Master of Science graduating student in Aerospace Engineering 2012/2013"
+    entity: "Department of Electrical and Computer Engineering - Técnico Lisboa"
+    date: "2013 Sep"
 
 voluntary:
 
