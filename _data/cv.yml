@@ -38,7 +38,7 @@ experience:
     date:
       begin: "2011 Nov"
       end: "2012 Oct"
-    description: "Full stack development."
+    description: "Full stack web development."
 
 education:
   - title: "Ph.D. in Computer Vision"
@@ -58,10 +58,21 @@ education:
 
 publications:
   - title: "Augmented Reality for the Support of Space Exploration Missions and On-Ground/On-Orbit Operations"
+    authors:
+      - "Domenico Tedone"
+      - "Manuela Marello"
+      - "Giorgio Musso"
+      - "Nikos Frangakis"
+      - "David Martinez Oliveira"
+      - "Sérgio Agostinho"
+      - "Kaj Helin"
     publisher: "Advances in Human Factors and System Interactions: Proceedings of the AHFE 2016 International Conference on Human Factors and System Interactions / Springer International Publishing"
     date: "2016 Jul"
     url: "https://doi.org/10.1007/978-3-319-41956-5_14"
   - title: "On-line Detection and Estimation of Gaseous Point Sources Using Sensor Networks"
+    authors:
+      - "Sérgio Agostinho"
+      - "João Pedro Gomes"
     publisher: "Proceedings of the 22nd European Signal Processing Conference (EUSIPCO)"
     date: "2014 Sep"
     url: "http://ieeexplore.ieee.org/abstract/document/6952294/"

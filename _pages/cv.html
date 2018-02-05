@@ -42,7 +42,17 @@ header:
 	<div class="wrapper">
 		<span class="color-darker-gray">{{ item.title }}</span>
 		<br>
+		<span class="color-gray">
+			{%- for author in item.authors -%}
+				{% unless forloop.first %}
+					{{- ', ' -}}
+				{% endunless %}
+				{% assign names = author | split:' ' %}
+				{{- names.first | truncate: 1, "" -}}{{'. '}}{{- names.last -}}
+			{% endfor %}
+		</span>
 		<span class="color-light-gray">
+			<br>
 			{{ item.publisher }}
 			<br>
 			{{ item.date }} - <a href="{{ item.url }}">url</a>
