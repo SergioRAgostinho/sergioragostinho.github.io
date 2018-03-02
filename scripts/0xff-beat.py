@@ -15,11 +15,17 @@ __maintainer__ = "Sérgio Agostinho"
 __email__ = "sergio(dot)r(dot)agostinho(at)gmail(dot)com"
 
 
+import sys
 import os.path
 import urllib.request
 import json
 import re
-from slugify import slugify
+import unicodedata
+
+def slugify(string):
+    tmp = unicodedata.normalize('NFKD', string).encode('ascii', 'ignore');
+    tmp = str(re.sub(r'[^\w\s-]', '', tmp.decode()).strip().lower())
+    return re.sub(r'[-\s]+', '-', tmp)
 
 def fetch_json_data(url):
     with urllib.request.urlopen(url) as req:
@@ -78,7 +84,9 @@ def create_episode_file(episode, folder):
 # Pull content from website go through the episodes
 data = fetch_json_data("https://api.mixcloud.com/0xff-beat/cloudcasts/?limit=100")
 episodes = data['data']
-folder = "/home/sergio/Development/website/_off-beat"
+script_path, _ = os.path.split(os.path.abspath(sys.argv[0]))
+folder = script_path + '/../_off-beat'
+# folder = "/home/sergio/Development/website/_off-beat"
 
 for ep in episodes:
     # Create the name for checking the file
