@@ -12,3 +12,6 @@ main:
   - title: "cv"
     url:  "/cv"
     description: "My curriculum vitae"
+  - title: "bootstrap-ml"
+    url:  "/bootstrap-ml"
+    description: "Bootstrap ML - an introductory workshop to Machine Learning"
