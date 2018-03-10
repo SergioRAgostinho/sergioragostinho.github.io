@@ -8,6 +8,8 @@ header:
 
 With the start of 2018, it's time to kickstart all those crazy diets and unrealistic workout plans. Let us ease that process for you with a delightful audio experience, to accompany you on all your treadmill adventures.
 
+Spotify playlist: [https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/3e83ECi2AXnbVrNJe0sz3d?si=S1E88-20QxSytlxvF_m6hg](https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/3e83ECi2AXnbVrNJe0sz3d?si=S1E88-20QxSytlxvF_m6hg)
+
 Original photo by Michael Scott: [https://www.flickr.com/photos/michaeljscott/2235636273/](https://www.flickr.com/photos/michaeljscott/2235636273/)
 
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2F0xff-beat%2F0xff-beat-s02-episode-10%2F" frameborder="0" ></iframe>

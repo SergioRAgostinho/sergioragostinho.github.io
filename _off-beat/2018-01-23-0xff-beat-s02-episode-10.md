@@ -1,12 +1,14 @@
 ---
 title: "0xff beat s02 episode 10"
 date: 2018-01-23
-tags: [r-n-b, alternative, trip-hop, downtempo, podcast]
+tags: [rnb, alternative, trip-hop, downtempo, podcast]
 header:
   teaser: "https://thumbnailer.mixcloud.com/unsafe/320x320/extaudio/e/6/7/7/5ac3-0e79-40d2-852d-546a1f8913d1"
 ---
 
 Sensuality and intimacy. Perfect companions for those cozy blanket wrapped mornings.
+
+Spotify playlist: [https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/27VG5cioFhsjUj1KO01zCx?si=ihNvXRwIScOVI-ZLnUIqUw](https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/27VG5cioFhsjUj1KO01zCx?si=ihNvXRwIScOVI-ZLnUIqUw)
 
 Original Picture by S. Inoué: [https://www.flickr.com/photos/116161198@N08/32667913492/](https://www.flickr.com/photos/116161198@N08/32667913492/)
 

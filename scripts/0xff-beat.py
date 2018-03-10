@@ -35,64 +35,87 @@ def fetch_json_data(url):
         data = json.loads(req.read().decode())
         return data
 
-def create_episode_file(episode, folder):
+def generate_file_content(episode):
+    # Initialize empty string
+    content = ''
 
-    # Assemble full name
+    # Write front matter
+    content += "---\n"
+    content += 'title: "' + episode['name'] + '"\n'
+
+    # Date
     date = episode['created_time'].split('T')[0]
-    filename = folder + '/' + date + '-' + slugify(episode['name']) + ".md"
-    print("Creating episode '" + episode['name'] + "' in '" + filename + "'")
-    with open(filename, "w") as out:
+    content += "date: " + date + "\n"
 
-        # Write front matter
-        out.write("---\n")
-        out.write('title: "' + episode['name'] + '"\n')
+    # tags
+    content += "tags: ["
+    for tag in episode['tags']:
+        if tag != episode['tags'][0]:
+            content += ", "
+        content += slugify(tag['name'])
 
-        # Date
-        date = episode['created_time'].split('T')[0]
-        out.write("date: " + date + "\n")
+    content += "]\n"
 
-        # tags
-        out.write("tags: [")
-        for tag in episode['tags']:
-            if tag != episode['tags'][0]:
-                out.write(", ")
-            out.write(slugify(tag['name']))
+    # Header image
+    content += 'header:\n  teaser: "' + episode['pictures']['320wx320h'] + '"\n'
 
-        out.write("]\n")
+    # Close Front Matter
+    content += "---\n"
 
-        # Header image
-        out.write('header:\n  teaser: "' + episode['pictures']['320wx320h'] + '"\n')
+    # Fetch description and parse urls properly
+    desc = fetch_json_data("https://api.mixcloud.com" + episode['key'])['description']
+    urls = re.findall("(?P<url>https?://[^\s]+)", desc)
+    for url in urls:
+        desc = desc.replace(url, "[" + url + "](" + url + ")")
 
-        # Close Front Matter
-        out.write("---\n")
+    content += "\n" + desc + "\n"
 
-        # Fetch description and parse urls properly
-        desc = fetch_json_data("https://api.mixcloud.com" + episode['key'])['description']
-        urls = re.findall("(?P<url>https?://[^\s]+)", desc)
-        for url in urls:
-            desc = desc.replace(url, "[" + url + "](" + url + ")")
+    # Write iframe with player
+    content += '\n<iframe width="100%" height="120" src="' \
+               'https://www.mixcloud.com/widget/iframe/?' \
+               'hide_cover=1&light=1&feed=%2F0xff-beat%2F' + episode['slug'] + \
+               '%2F" frameborder="0" ></iframe>\n'
 
-        out.write("\n" + desc + "\n")
+    return content;
 
-        # Write iframe with player
-        out.write('\n<iframe width="100%" height="120" src="'
-                  'https://www.mixcloud.com/widget/iframe/?'
-                  'hide_cover=1&light=1&feed=%2F0xff-beat%2F' + episode['slug'] +
-                  '%2F" frameborder="0" ></iframe>\n')
-
+def is_content_equal(filename, content):
+    with open(filename, "r") as file:
+        return str(file.read()) == content
 
 # Pull content from website go through the episodes
 data = fetch_json_data("https://api.mixcloud.com/0xff-beat/cloudcasts/?limit=100")
+# data = fetch_json_data("https://api.mixcloud.com/0xff-beat/cloudcasts/?limit=6")
 episodes = data['data']
 script_path, _ = os.path.split(os.path.abspath(sys.argv[0]))
 folder = script_path + '/../_off-beat'
-# folder = "/home/sergio/Development/website/_off-beat"
 
-for ep in episodes:
-    # Create the name for checking the file
+# Iterate through all episodes to check if any needs to be updated
+for i, ep in enumerate(episodes):
+
+    # Fetch post content
+    content = generate_file_content(ep)
+
+    # Assemble full name
     date = ep['created_time'].split('T')[0]
-    file_name = folder + '/' + date + '-' + slugify(ep['name']) + ".md"
+    filename = folder + '/' + date + '-' + slugify(ep['name']) + ".md"
 
-    # if it doesn't exist create it
-    if not os.path.exists(file_name):
-        create_episode_file(ep, folder)
+    # Check if file needs to be written
+    exists = os.path.exists(filename)
+    if exists:
+        different = not is_content_equal(filename, content)
+
+
+    if not exists:
+        print("Creating episode '" + ep['name'] + "' in '" + filename + "'")
+    elif different:
+        print("Updating episode '" + ep['name'] + "' in '" + filename + "'")
+
+    sys.stdout.write("\r%d%% - " % (i*100/len(episodes)))
+    sys.stdout.flush()
+
+    if not exists or different:
+        with open(filename, 'w') as out:
+            out.write(content)
+
+# Force new line
+print('')
