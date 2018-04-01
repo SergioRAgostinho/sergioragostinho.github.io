@@ -13,4 +13,6 @@ Today, we bid you adieu. You have been a friend, a foe, a lover and a poet. Than
 Sincerely, 
 0xff beat
 
+Spotify Playlist: [https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/0FNGqQBMWjMqKSwGFFh9aI](https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/0FNGqQBMWjMqKSwGFFh9aI)
+
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2F0xff-beat%2F0xff-beat-s02-episode-8-nye-special%2F" frameborder="0" ></iframe>
