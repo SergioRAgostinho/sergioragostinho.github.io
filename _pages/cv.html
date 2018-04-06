@@ -99,3 +99,16 @@ header:
 	</div>
 	<hr>
 {% endfor %}
+
+<h2 id="awards">Organized Workshops</h2>
+
+{% for item in cv.workshops %}
+	<div class="wrapper">
+		<span class="color-darker-gray">{{ item.title }}</span>
+		<br>
+		<a href="{{ item.url }}">{{ item.url }}</a>
+		<br>
+		<p class="clear color-gray">{{ item.description }}</p>
+	</div>
+	<hr>
+{% endfor %}

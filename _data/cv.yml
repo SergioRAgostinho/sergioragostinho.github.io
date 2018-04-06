@@ -86,10 +86,15 @@ skills:
   fields:
     - "Computer Vision"
     - "Machine Learning"
-    - "Software development"
+    - "Software Development"
   languages:
     - "C++/C"
     - "Python"
     - "MATLAB"
   frameworks:
     - "Point Cloud Library"
+
+workshops:
+  - title: "Bootstrap ML"
+    url: "http://sergioagostinho.com/bootstrap-ml"
+    description: "An introductory session to Machine Learning aimed at first time users."
