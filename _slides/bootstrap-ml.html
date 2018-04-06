@@ -1,0 +1,844 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Bootstrap ML</title>
+		<meta name="description" content="A two hour introductory session to help you take your first steps in Machine Learning">
+		<meta name="author" content="Sérgio Agostinho">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="/assets/bootstrap-ml/css/reveal.css">
+		<link rel="stylesheet" href="/assets/bootstrap-ml/css/theme/black.css">
+		<!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
+		<!-- <link rel="stylesheet" href="css/theme/league.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/assets/bootstrap-ml/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/bootstrap-ml/css/print/pdf.css' : '/assets/bootstrap-ml/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<!-- Splash Page -->
+					<section data-background="/assets/bootstrap-ml/images/forest_tree.png" data-background-color="#000000">
+					</section>
+
+					<!-- Front Cover -->
+					<section data-background="/assets/bootstrap-ml/images/forest_tree.png" data-background-color="#000000" data-background-image-opacity="black">
+						<h1>Bootstrap ML</h1>
+						<p>
+							A two hour introductory session to help you take your first steps in Machine Learning
+						</p>
+					</section>
+				</section>
+
+
+				<!-- Who am I -->
+				<section>
+					<!-- Website -->
+					<section data-background="/assets/bootstrap-ml/images/sergio.jpg" data-background-color="#ffffff" data-background-image-opacity="white">
+						<h1>Who am I</h1>
+						<h2><a href="http://sergioagostinho.com">http://sergioagostinho.com</a></h2>
+					</section>
+
+					<!-- Email -->
+					<section data-background="/assets/bootstrap-ml/images/envelope.png" data-background-color="#fdfdfc" data-background-image-opacity="white">
+						<h1>Reach me at </h1>
+						<h3><a href="mailto:sergio.r.agostinho@gmail.com">sergio.r.agostinho@gmail.com</a></h3>
+					</section>
+
+					<!-- PGP -->
+					<section data-background="/assets/bootstrap-ml/images/secret-agent.png" data-background-color="#fdfdfc" data-background-image-opacity="white">
+						<h1>Confidentially </h1>
+						<h2><a href="http://sergioagostinho.com/assets/public.txt">PGP Public Key</a></h2>
+					</section>
+				</section>
+
+
+				<!-- Definition -->
+				<section>
+					<section>
+						<h1>Machine Learning</h1>
+						<p>Let's define it</p>
+					</section>
+					<section>
+						<blockquote>
+							&ldquo;A computer program is said to learn from experience <i>E</i> with respect to some class of tasks <i>T</i> and performance measure <b>P</b>, if its performance at tasks in T, as measured by P, improves with experience E.&rdquo; - <a href="#references">Mitchell 1997</a>
+						</blockquote>
+					</section>
+				</section>
+
+				<!-- Experience -->
+				<section>
+					<section>
+						<h1>Experience</h1>
+					</section>
+
+					<section>
+						<h1>Supervised</h1>
+					</section>
+					<section>
+						<blockquote>
+							&ldquo;Supervised learning algorithms experience a dataset containing features, but each example is also associated with a label or target.&rdquo; - <a href="#references">Goodfellow et al. 2016</a>
+						</blockquote>
+					</section>
+					<section>
+						<h2>IRIS Dataset</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Sepal Length (cm)</th>
+									<th>Sepal Width (cm)</th>
+									<th>Petal Length (cm)</th>
+									<th>Petal Width (cm)</th>
+									<th>Target (class)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>5.1</td>
+									<td>3.5</td>
+									<td>1.4</td>
+									<td>0.2</td>
+									<td>Setosa</td>
+								</tr>
+								<tr>
+									<td>7.</td>
+									<td>3.2</td>
+									<td>4.7</td>
+									<td>1.4</td>
+									<td>Versicolor</td>
+								</tr>
+								<tr>
+									<td>6.3.</td>
+									<td>3.3</td>
+									<td>6.</td>
+									<td>2.5</td>
+									<td>Virginica</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="#references">Fisher 1936</a>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/petal-sepal.jpg" width="600px">
+						<!-- <img src="/assets/bootstrap-ml/images/sepal-petal.png" height="600"> -->
+					</section>
+					<section>
+						<h1>Unsupervised</h1>
+					</section>
+					<section>
+						<blockquote>
+							&ldquo;Unsupervised learning algorithms experience a dataset containing many features, then learn useful properties of the structure of this dataset.&rdquo; - <a href="#references">Goodfellow et al. 2016</a>
+						</blockquote>
+					</section>
+					<section>
+						<h2>IRIS Dataset</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Sepal Length (cm)</th>
+									<th>Sepal Width (cm)</th>
+									<th>Petal Length (cm)</th>
+									<th>Petal Width (cm)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>5.1</td>
+									<td>3.5</td>
+									<td>1.4</td>
+									<td>0.2</td>
+								</tr>
+								<tr>
+									<td>7.</td>
+									<td>3.2</td>
+									<td>4.7</td>
+									<td>1.4</td>
+								</tr>
+								<tr>
+									<td>6.3.</td>
+									<td>3.3</td>
+									<td>6.</td>
+									<td>2.5</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="#references">Fisher 1936</a>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/Iris_dataset_scatterplot.svg" height="600">
+					</section>
+
+					<section>
+						<h1>Finding Data</h1>
+					</section>
+					<section 	data-background="/assets/bootstrap-ml/images/kaggle.png"
+										data-background-color="#000000"
+										data-background-image-opacity="black">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Kaggle</h2>
+							<a href="https://www.kaggle.com">https://www.kaggle.com</a>
+						</div>
+					</section>
+					<section 	data-background="/assets/bootstrap-ml/images/kaggle.png" data-background-color="#ffffff">
+					</section>
+				</section>
+
+				<!-- ******************************** Tasks ******************************** -->
+				<section>
+					<section>
+						<h1>Tasks</h1>
+					</section>
+
+					<!-- ****************************** Regression ****************************** -->
+					<section>
+						<h1>Regression</h1>
+					</section>
+					<section>
+						<p>Predict some numerical value given some input.</p>
+						<br>
+						$$ f : \mathbb{R}^n \to \mathbb{R} $$
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/svm_regression.png">
+					</section>
+
+					<!-- **************************** Classification **************************** -->
+					<section>
+						<h1>Classification</h1>
+					</section>
+					<section>
+						<p>Predict some class/category given some input.</p>
+						<br>
+						$$ f : \mathbb{R}^n \to c$$ where $$c \in \{c_1, \ldots, c_k \} $$
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/classifier_comparison.png">
+					</section>
+					<section>
+						<h2>CIFAR10 dataset</h2>
+						<div><img src="/assets/bootstrap-ml/images/cifar10.png"></div>
+						<a href="#references">Krizhevsky and Hinton 2009</a>
+					</section>
+					<section>
+						<h2>Binary vs. Multiclass</h2>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/multiclass.png">
+					</section>
+					<section>
+						<h2>Data Separability</h2>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/separable-data.png">
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/inseparable-data.png">
+					</section>
+
+					<!-- **************************** Dim Reduction **************************** -->
+					<section>
+						<h1>Dimensionality Reduction</h1>
+					</section>
+					<section>
+						<p>Reduce the dimensions of your data while trying to preserve as much information as possible</p>
+						<br>
+						<p>It's a lossy encoder!</p>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/iris_pca.png">
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/faces.png" width="600px">
+					</section>
+					<section>
+						<p>All the faces in the previous slide can be approximately represented as linear combination of these.</p>
+						<img src="/assets/bootstrap-ml/images/eigenfaces.png" width="450px">
+					</section>
+
+					<!-- **************************** Anomaly Detct **************************** -->
+					<section>
+						<h1>Anomaly Detection</h1>
+					</section>
+					<section>
+							Learn the distribution over the usual habits/events. Anomalies will have a different distribution on their own and occur with low probability.
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/anomaly.png" style="background-color: rgba(255,255,255,0.9);">
+					</section>
+
+					<!-- *********************** Synthesis and Sampling *********************** -->
+					<section>
+						<h1>Synthesis and Sampling</h1>
+					</section>
+					<section>
+						<p> Learn the probability distribution and sample from it! </p>
+					</section>
+					<section>
+						<h2>StackGAN</h2>
+						<!-- <p>Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks</p> -->
+						<img src="/assets/bootstrap-ml/images/text-to-image.png">
+						<a href="#references">Zhang et al. 2017</a>
+					</section>
+				</section>
+
+				<!-- Performance -->
+				<section>
+					<section>
+						<h1>Performance</h1>
+					</section>
+
+					<!-- *********************** Quadratic Error *********************** -->
+					<section>
+						<h1>Quadratic Error</h1>
+					</section>
+					<section>
+						<p>$$\underset{\theta}{\operatorname{argmin}} \frac{1}{N} \sum_{i=1}^N \left( y_i - f(\theta,\textbf{x}_i)\right)^2$$</p>
+					</section>
+					<section>
+						<p>Multimodal functions</p>
+						<img src="/assets/bootstrap-ml/images/multimodal.png">
+					</section>
+					<section>
+						<p>The Global Optimum is hard to find!</p>
+						<p class="fragment fade-in">... but often you just need a good enough local one</p>
+					</section>
+
+					<!-- *********************** Confusion Matrix *********************** -->
+					<section>
+						<h1>Confusion Matrix</h1>
+					</section>
+					<section>
+						<h3>MNIST Data Set</h3>
+						<img src="/assets/bootstrap-ml/images/mnist.png">
+						<p>(<a href="http://yann.lecun.com/exdb/mnist/">MNIST Data set</a>)</p>
+					</section>
+					<section>
+						<h3>How good is your classifier?</h3>
+						<img src="/assets/bootstrap-ml/images/nn-mse.svg">
+						<p class="fragment fade-in">Hard to tell!</p>
+					</section>
+					<section>
+						<img width="600px" src="/assets/bootstrap-ml/images/nn-confusion.svg">
+					</section>
+
+					<!-- *********************** Model Capacity *********************** -->
+					<section>
+						<h1>Model Capacity</h1>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/model-capacity.png">
+						<p>Taken from <a href="#references">Goodfellow et al. 2016</a>.</p>
+					</section>
+
+					<!-- *********************** Generalization *********************** -->
+					<section>
+						<h1>Generalization</h1>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/model-generalization.png">
+						<p>Taken from <a href="#references">Goodfellow et al. 2016</a>.</p>
+					</section>
+				</section>
+
+				<!-- Algorithms -->
+				<section>
+					<section>
+						<h1>Algorithms</h1>
+					</section>
+
+					<!-- *********************** Linear Regression *********************** -->
+					<section>
+						<h1>Linear Regression</h1>
+					</section>
+					<section>
+						<img width="600px" src="/assets/bootstrap-ml/images/linear-points.png">
+					</section>
+					<section>
+						<p>Underlying assumption</p>
+						<p>$$y = ax + b$$</p>
+					</section>
+					<section>
+						<img width="600px" src="/assets/bootstrap-ml/images/linear-regression.png">
+					</section>
+					<section>
+						<p>Equivalent to solving this problem</p>
+						<p>$$\underset{a, b}{\operatorname{argmin}} \frac{1}{N} \sum_{i=1}^N \left( y_i - ax_i - b\right)^2$$</p>
+					</section>
+					<section>
+						<p>Part of a more general family of problems</p>
+						<p>$$y = \textbf{w}^T \left[ \begin{matrix}\Phi(\textbf{x}) \\ 1 \end{matrix} \right]$$</p>
+						<p>where</p>
+						<p>$w_{k+1} = b$, $\Phi(\textbf{x}): \mathbb{R}^n \to \mathbb{R}^k$</p>
+						<p class="fragment fade-in">Has a closed-form solution!</p>
+					</section>
+					<section>
+						<p>
+							$$\begin{eqnarray} w &=& \left[\begin{matrix}\sum^{N}_{i = 1} \Phi(\textbf{x}_i)\Phi(\textbf{x}_i)^T & \sum^{N}_{i = 1} \Phi(\textbf{x}_i) \\ \sum^{N}_{i = 1} \Phi(\textbf{x}_i)^T & N \end{matrix} \right]^{-1} \\
+							&\times& \left[\begin{matrix} \sum^{N}_{i = 1}\Phi(\textbf{x}_i) y_i \\ \sum^{N}_{i = 1}y_i \end{matrix} \right]\\
+							\textbf{w} &=& \left[\begin{matrix} w_1 & \dots & w_k & b \end{matrix} \right]^T\end{eqnarray}$$
+						</p>
+					</section>
+					<section>
+						<p>As long as your parameters are linear with respect to your features this works!</p>
+					</section>
+
+					<!-- *********************** Logistic Regression *********************** -->
+					<section>
+						<h1>Logistic Regression</h1>
+					</section>
+					<section>
+						<p>It's actually a classification algorithm!</p>
+						<p>:/</p>
+					</section>
+					<section>
+						<p>In its canonic form, it's designed for binary classification problems</p>
+						<p>Usually encoded such that $$y_i \in \{0, 1\}$$ </p>
+					</section>
+					<section>
+						<p>$$P(y=1|\textbf{x}) = \frac{1}{1-\exp^{-z(\textbf{x})}}$$</p>
+						<p>$$P(y=0|\textbf{x}) = \frac{\exp^{-z(x)}}{1-\exp^{-z(\textbf{x})}}$$</p>
+						with
+						<p>$$z(\textbf{x}) = \textbf{w}^T \Phi(\textbf{x}) + b$$</p>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/logistic-linear.png">
+					</section>
+					<section>
+						<img style="background-color: rgba(255, 255, 255, 0.9)" src="/assets/bootstrap-ml/images/logistic.svg">
+					</section>
+					<section>
+						Let's absorb $b$ in $\textbf{w}$ and append a $1$ into $\Phi(\textbf{x})$  just like before and rewrite things
+						<br><br>
+						<div class="fragment fade-in">
+							$$P(y=1|\textbf{x}) = g(\textbf{w}^T\Phi(\textbf{x}))$$
+							$$P(y=0|\textbf{x}) = 1 - g(\textbf{w}^T\Phi(\textbf{x}))$$
+							with
+							$$g(z) = \frac{1}{1-\exp^{-z}}$$
+						</div>
+					</section>
+					<section>
+						We estimate the optimal $\textbf{w}$ by maximizing its log likelihood
+						<br><br>
+						$$\hat{\textbf{w}} = \operatorname*{arg\,max}_\textbf{w} \log P(\textbf{y}|X;\textbf{w})$$
+					</section>
+					<section>
+						Since we assume samples are iid, the optimization problem boils down to
+						<br><br>
+						$$\begin{eqnarray}
+						\hat{\textbf{w}} &=& \operatorname*{arg\,max}_\textbf{w} \sum_{i=1}^N y_i \log g(\textbf{w}^T\Phi(\textbf{x})) \\
+						&+&  \sum_{i=1}^N(1 - y_i) \log (1 - g(\textbf{w}^T\Phi(\textbf{x})))\end{eqnarray}$$
+						<p class="fragment fade-in">Needs to be solved numerically</p>
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/logistic-linear.png">
+					</section>
+					<section>
+						<img src="/assets/bootstrap-ml/images/logistic-polynomial.png">
+					</section>
+
+					<!-- *********************** Bayes Classifier *********************** -->
+					<section>
+						<h1>Bayes Classifier</h1>
+					</section>
+					<section>
+						Imagine you have two Gaussian number generators
+						<br>
+						<img src="/assets/bootstrap-ml/images/gaussians-1d.svg">
+					</section>
+					<section>
+						If I tell you that one of these generators, created a new number $x$, how would you justify which one was it?
+						<img src="/assets/bootstrap-ml/images/gaussians-1d-vline.svg">
+					</section>
+					<section>
+						<div>
+							Let's express it formally
+							<br><br>
+							$$\operatorname*{arg\,max}_c P(y=c|\textbf{x})$$
+						</div>
+						<br>
+						<div class="fragment fade-in">
+							According to Bayes rule
+							<br><br>
+							$$P(y=c|\textbf{x}) = \frac{P(\textbf{x}|y=c)P(y=c)}{P(\textbf{x})}$$
+						</div>
+					</section>
+					<section>
+						Which results in finding
+						<br><br>
+						$$\operatorname*{arg\,max}_c P(\textbf{x}|y=c)P(y=c)$$
+					</section>
+					<section>
+						You need to be able to express $P(\textbf{x}|y=c)$ and have prior knowledge of $P(y)$
+						<br><br>
+						If you have them, this is optimal
+					</section>
+
+					<!-- *********************** Naive Bayes Classifier *********************** -->
+					<section>
+						<h1>Naive Bayes Classifier</h1>
+					</section>
+					<section>
+						<p>Usually $P(\textbf{x}|y=c)$ is hard to capture!<p>
+					</section>
+					<section>
+						<p style="text-align: left;"><b>Simplifying Assumption:</b> <br>
+							features are conditionally independent on the class<p>
+						<p>$$P(\textbf{x}|y=c) = \prod_{i=1}^k P(x_i|y=c)$$<p>
+					</section>
+					<section>
+						<h2>Example</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Long</th>
+									<th>Not Long</th>
+									<th>Sweet</th>
+									<th>Not Sweet</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Banana</td>
+									<td>400</td>
+									<td>100</td>
+									<td>350</td>
+									<td>150</td>
+								</tr>
+								<tr>
+									<td>Orange</td>
+									<td>0</td>
+									<td>300</td>
+									<td>150</td>
+									<td>150</td>
+								</tr>
+								<tr>
+									<td>Other</td>
+									<td>100</td>
+									<td>100</td>
+									<td>150</td>
+									<td>50</td>
+								</tr>
+							</tbody>
+						</table>
+						Inspired on the <a href="https://stackoverflow.com/questions/10059594/a-simple-explanation-of-naive-bayes-classification#20556654">example</a> by Ram Narasimhan.
+					</section>
+					<section>
+						Let's say we draw a new fruit and it turns out to have the following properties:
+						<br><br>
+						$$ fruit = \left[\begin{matrix} Long & Not Sweet \end{matrix}\right]$$
+						<p class="fragment fade-in">Which fruit is it?</p>
+					</section>
+					<section>
+						<p>Let's Compute probabilities!</p>
+						<p>
+							$$P(Banana) = \frac{500}{1000} = 0.5$$
+							<br>
+							$$P(Orange) = \frac{300}{1000} = 0.3$$
+							<br>
+							$$P(Other) = \frac{200}{1000} = 0.2$$
+						</p>
+					</section>
+					<section>
+						<p>
+							$$P(Long|Banana) = \frac{400}{500} = 0.8$$
+							<br>
+							$$P(Long|Orange) = \frac{0}{300} = 0$$
+							<br>
+							$$P(Long|Other) = \frac{100}{200} = 0.5$$
+						</p>
+					</section>
+					<section>
+						<p>
+							$$P(NotSweet|Banana) = \frac{150}{500} = 0.3$$
+							<br>
+							$$P(NotSweet|Orange) = \frac{150}{300} = 0.5$$
+							<br>
+							$$P(NotSweet|Other) = \frac{50}{200} = 0.25$$
+						</p>
+					</section>
+					<section>
+						<p>
+							$$\begin{eqnarray}
+							P(Bn|L, NS) &=& P(L|Bn)P(NS|Bn)P(Bn)\\
+							                &=& 0.8 * 0.3 * 0.5\\
+							                &=& 0.12\\
+							P(Org|L, NS) &=& P(L|Org)P(NS|Org)P(Org)\\
+							                &=& 0 * 0.5 * 0.3\\
+							                &=& 0\\
+							P(Othr|L, NS)  &=& P(L|Othr)P(NS|Othr)P(Othr)\\
+							                &=& 0.5 * 0.25 * 0.2 \\
+							                &=& 0.025\\
+							\end{eqnarray}$$
+						</p>
+						<p class="fragment fade-in">We're $82.76\%$ sure that this is a Banana</p>
+					</section>
+					<section>
+						<blockquote>
+							&ldquo;Turns out it works surprisingly well!&rdquo;</a>
+						</blockquote>
+						A sentence you'll read a lot when someone is describing Naive Bayes.
+					</section>
+					<!-- <section>
+						<h1>Support Vector Machines</h1>
+					</section>
+					<section>
+						<h1>Decision Trees</h1>
+					</section> -->
+
+					<!-- *********************** Neural Networks *********************** -->
+					<section>
+						<h1>Neural Networks</h1>
+					</section>
+					<section>
+						<h2>Multilayer Perceptrons</h1>
+						<img style="background-color: rgba(255, 255, 255, 0.9);" src="/assets/bootstrap-ml/images/mlp.svg">
+					</section>
+					<section>
+						With enough hidden layers and neurons, you can approximate very complex distributions!
+					</section>
+					<section>
+						<h2>Artificial Neurons</h1>
+						<img style="background-color: rgba(255, 255, 255, 0.9); width: 600px" src="/assets/bootstrap-ml/images/artificial-neuron.png">
+					</section>
+					<section>
+						All neurons come "equipped" with:
+						<p>
+							<ul>
+								<li>input vector</li>
+								<li>weight vector</li>
+								<li>activation function</li>
+								<li>output</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<div>
+							$$\begin{eqnarray}
+								z_{ij} &=& g(s_{ij}) \\
+								s_{ij} &=& \textbf{w}_{ij}^T \textbf{z}_{i-1}
+							\end{eqnarray}$$
+						</div>
+						<p>$i$ - layer index</p>
+						<p>$j$ - position within the layer index</p>
+						<p>$g : \mathbb{R} \to \mathbb{R}$ is the activation function</p>
+					</section>
+					<section>
+						<img style="background-color: rgba(255, 255, 255, 0.9); width: 600px;" src="/assets/bootstrap-ml/images/mlp2.png">
+					</section>
+					<section>
+						<h2>Activation Functions</h2>
+						<p class="fragment fade-in">The list is extensive but let's focus on a few popular ones</p>
+					</section>
+					<section>
+						<h3>Identity</h3>
+						<p>$g(z)=z$</p>
+						<p>$g'(z)=1$</p>
+						<img style="background-color: rgba(255, 255, 255, 0.9);" src="/assets/bootstrap-ml/images/activation-identity.svg">
+						<p>Output range $(-\infty, +\infty)$</p>
+						<p>Commonly used as the last layer of regression NNs</p>
+					</section>
+					<section>
+						<h3>Hyperbolic Tangent</h3>
+						<p>$g(z)= \tanh(z)$</p>
+						<p>$g'(z)=1 - g(z)^2$</p>
+						<img style="background-color: rgba(255, 255, 255, 0.9);" src="/assets/bootstrap-ml/images/activation-tanh.svg">
+						<p>Output range $(-1, +1)$</p>
+						<p>Commonly used as the last layer of classification NNs</p>
+					</section>
+					<section>
+						<h3>Rectified Linear Unit (RELU)</h3>
+						<p>$$g(z)= \begin{cases}0 & \text{for } z < 0 \\
+						z & \text{for } z \ge 0 \end{cases}$$</p>
+						<p>$$g'(z)= \begin{cases}0 & \text{for } z < 0 \\
+						1 & \text{for } z \ge 0 \end{cases}$$</p>
+						<img style="background-color: rgba(255, 255, 255, 0.9);" src="/assets/bootstrap-ml/images/activation-relu.svg">
+						<p>Output range $[0, +\infty)$</p>
+						<p>Commonly used in the hidden layers of deep NNs</p>
+					</section>
+					<section>
+						<h2>Optimizing</h2>
+					</section>
+					<section>
+						<p>We're still interested in finding a good minimum for</p>
+						<p>
+							$$\underset{\textbf{w}}{\operatorname{arg\,min}} \frac{1}{N} \sum_{i=1}^N \left( y_i - f(\textbf{w},\textbf{x}_i)\right)^2$$
+							$$\underset{\textbf{w}}{\operatorname{arg\,min\,}} E(\textbf{w})$$
+						</p>
+					</section>
+					<section>
+						<p>The problem is commonly solved resorting to gradient methods</p>
+						<p>$$\textbf{w}^{k+1} = \textbf{w}^{k} - \eta \left. \frac{d E(\textbf{w})}{d \textbf{w}}\right|_{\textbf{w} = \textbf{w}^k}$$</p>
+						<p class="fragment fade-in">Understanding how the gradient is derived is an important "milestone" in mastering NNs</p>
+					</section>
+					<section>
+						<h2>Example:</h2>
+						<img style="width: 600px; background-color: rgba(255, 255, 255, 0.9);" src="/assets/bootstrap-ml/images/simple-nn.png">
+					</section>
+					<section>
+						<p>$$y = g(\textbf{w}^T\textbf{x})$$</p>
+						<p>$$E(\textbf{w}) = \frac{1}{2}(y_t - g(\textbf{w}^T\textbf{x}))^2$$</p>
+						<p>$$\frac{d E(\textbf{w})}{d \textbf{w}} = (y_t - g(\textbf{w}^T\textbf{x})) \times -g'(\textbf{w}^T\textbf{x}) \times \textbf{x}$$</p>
+					</section>
+					<section>
+						<div>
+							In order to compute $\Delta \textbf{w}$:
+							<div>
+								<ol>
+									<li>
+										<p>Forward propagate</p>
+										<div>
+											<ul>
+												<li>Substitute inputs</li>
+												<li>Calculate outputs of all neurons/units</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p>Back propagate</p>
+										<div>
+											<ul>
+												<li>Compute the gradient of the outer most layers</li>
+												<li>The gradient of layer $i$ depends on the gradient of layer $i+1$</li>
+											</ul>
+										</div>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</section>
+					<section>
+						Add a fully connected hidden layer with two units to the example and verify this!
+					</section>
+					<!-- <section>
+						<h2>Example: XOR</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>I0</th>
+									<th>I1</th>
+									<th>O</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<img style="background-color: rgba(255, 255, 255, 0.9); width: 600px;" src="/assets/bootstrap-ml/images/xor.png" >
+					</section> -->
+					<!-- <section>
+						<h1>Generative Adversarial Networks</h1>
+					</section> -->
+				</section>
+
+				<!-- References -->
+				<section>
+					<section id="references">
+						<h1>References</h1>
+					</section>
+				</section>
+
+				<!-- Stay up to Date -->
+				<section>
+					<section>
+						<h1>Stay Up to Date</h1>
+					</section>
+					<section id="yt" data-background-iframe="https://www.youtube-nocookie.com/embed/izZofvgaIig?rel=0&controls=0&showinfo=0&autoplay=1&loop=1&cc_load_policy=0&modestbranding=1">
+						<div class="fragment fade-out" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Two Minute Papers</h2>
+							<p>Follow on <a href="https://www.youtube.com/user/keeroyz/videos"> Youtube</a></p>
+						</div>
+					</section>
+				</section>
+
+				<!-- Image attributions -->
+				<section>
+					<section id="attributions">
+						<h1>Image Attributions</h1>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="/assets/bootstrap-ml/lib/js/head.min.js"></script>
+		<script src="/assets/bootstrap-ml/js/reveal.js"></script>
+		<script src="/assets/bootstrap-ml/js/custom.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				history: false, // not working properly with inner links
+
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				dependencies: [
+					{ src: '/assets/bootstrap-ml/plugin/markdown/marked.js' },
+					{ src: '/assets/bootstrap-ml/plugin/markdown/markdown.js' },
+					{ src: '/assets/bootstrap-ml/plugin/notes/notes.js', async: true },
+					{ src: '/assets/bootstrap-ml/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/assets/bootstrap-ml/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/assets/bootstrap-ml/plugin/bibtex-parse/bibtex-parse.js', async: true, callback: onLoadBibtexParse },
+
+					// Online ones
+					{ src: '/assets/bootstrap-ml/plugin/math/math.js', async: true }
+				]
+			});
+
+			// Populate the references
+			function onLoadBibtexParse() {
+				readTextFile("/assets/bootstrap-ml/data/references.bib",
+					writeReferences,
+					{ "page_size" : 3});
+			}
+
+			// Populate the image attributions
+			readTextFile("/assets/bootstrap-ml/images/attributions.json",
+				writeImageAttributions,
+				{ "page_size": 4}
+			);
+		</script>
+	</body>
+</html>

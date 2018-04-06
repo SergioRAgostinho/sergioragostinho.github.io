@@ -133,6 +133,9 @@ collections:
   off-beat:
     output: true
     permalink: /0xff-beat/:path/
+  slides:
+    output: true
+    permalink: /slides/:path/
 
 # Defaults
 defaults:
