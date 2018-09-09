@@ -6,9 +6,9 @@ toc_label: "Contents"
 tags: [bootstrap-ml, workshop]
 ---
 
-Two weeks have passed since the first (and currently only) session of the [Bootstrap ML](/bootstrap-ml) workshop took place. It was my first experience developing a workshop from scratch with the aggravated challenge of being about Machine Learning. I thought about sharing some thoughts behind the entire process. The goods and the bads, the expectations versus what was actually accomplished.
+Roughly half a year has passed since the first (and currently only) session of the [Bootstrap ML](/bootstrap-ml) workshop took place. It was my first experience developing a workshop from scratch with the aggravated challenge of being about Machine Learning. I thought about sharing some thoughts behind the entire process. The goods and the bads, the expectations versus what was actually accomplished.
 
-If you're curious on having a take from the participant's perspective you should definitely check out this [blog post](https://medium.com/hugo-ferreiras-blog/basics-of-machine-learning-and-a-simple-implementation-of-the-naive-bayes-algorithm-80c1e67a2e8a) by Hugo Ferreira. It's a wonderful summary of the content I presented at the workshop.
+If you're curious on having a take from the participant's perspective you should definitely check out this [blog post](https://medium.com/hugo-ferreiras-blog/basics-of-machine-learning-and-a-simple-implementation-of-the-naive-bayes-algorithm-80c1e67a2e8a) by Hugo Ferreira. It's a wonderful summary of the content I presented.
 
 ## The Invitation
 
@@ -18,7 +18,7 @@ It was the first time I was invited for such a thing, so after pondering on the 
 
 ## Open Source and Collaborative
 
-It's no secret I'm an open source endorser. I had a clear goal from the beginning which was to make all content publicly available, but things did not exactly stop there.
+I'm an open source endorser and I had a clear goal from the beginning which was to make all content publicly available, but things did not exactly stop there.
 
 Having a single person doing all the material and also proof read it, is bound to have a number of mistakes. The over exposure and simple saturation of looking at the same content multiple times, sometimes lowers the attention levels to unimaginable heights. So there were going the be mistakes for sure and I needed to provide a mechanism for people to flag and submit corrections. But what if one wanted to extend the material on its own and contribute back?
 
@@ -46,13 +46,13 @@ It was time to start preparing content!
 
 Yep, it sounds like bogus and honestly it is. The session was planned to span a duration of 2 hours, split between two parts, one theoretical and one practical. Assuming they both had the same time allocation, it meant I had one hour. This was going to be hard. To help you understand the level of challenge here assume I ask you to teach me your specialty in 1 hour. What would you talk about?
 
-To top things of, the way the human mind learns new concepts was definitely not in my favor. I don't remember who exactly I'm exactly paraphrasing here but the idea is that for most people, at any point in time their brains are prepared to handle a single obstacle which they need to work in order to overcome. This obstacle can be a problem one needs to solve, a new concept one is trying to master, etc... I was going to "bombard" my students with a number of concepts they ever hear of, relying on my assumption of their existing past knowledge in Linear Algebra and Statistics. The odds of one retaining anything from the session seemed awfully low right from the start.
+To top things of, the way the human mind learns new concepts was definitely not in my favor. I don't remember who exactly I'm paraphrasing, but the idea is that for most people, at any point in time their brains are prepared to handle a single obstacle which they need to to overcome. This obstacle can be a problem one needs to solve, a new concept one is trying to master, etc... I was going to "bombard" my students with a number of concepts they never hear of, relying on my assumption of their existing past knowledge in Linear Algebra and Statistics. The odds of one retaining anything from the session seemed awfully low right from the start.
 
-The objectives needed to be tailored appropriately. I started asking myself "What is utterly fundamental that these people retain from this workshop?" and as it turned out, the answer came fairly quickly. Provided the description of a real life problem, which can potential be solved resorting to Machine Learning, anyone attending this workshop should be able to appropriately understand what type of Task needs to solved, what type of Experience our algorithm will subject to and have a rough guess of which Performance metric to use in order to train the algorithm.
+The objectives needed to be tailored appropriately. I started asking myself "What is utterly fundamental that these people retain from this workshop?" and as it turned out, the answer came fairly quickly. Provided the description of a real life problem, which can potential be solved resorting to Machine Learning, anyone attending this workshop should be able to appropriately understand what type of Task needs to solved, what type of Experience our algorithm will subject to and have a rough guess of which Performance metric to use in order to train the algorithm. Have a glance through the [slides](/slides/bootstrap-ml) in case some of these terms feel unfamiliar to you.
 
-I'm already employing some of the technical (provide links to presentation slides)
+After spending a couple of days gathering content and fiddling around with slides' material, I was ready to submit my presentation to the test and "recruited" my Dad to experience a demo run. Halfway through, I could sense he was tired a slightly confused, although sticking around till the end out of politeness. The outlook was not good and it should not be a surprise that on the actual day reactions were no different.
 
-Tried with my father 
+Besides the usual presentation flaws, I did the very basic one of trying to talk a little about everything and not knowing where to draw the line. I set up this expectation of an audience interested in learning about neural nets and deep learning, which are the hype topics, but failed to prioritize my topics to allow them to experience it. In the end, I did things by the book, trying to go from simple topics to more advance ones, giving a broad overview of the traditional machine learning approaches.
 
 The algorithms:
 overall interest in deep learning means that neural networks need to appear at some point
@@ -73,3 +73,9 @@ I blame
 Not to confuse clean twith basic 
 
 Inspiration from the TED Talks
+
+## After Math
+
+Tried to captivate my audience through GitHub, nobody was interested
+
+Through timings 
