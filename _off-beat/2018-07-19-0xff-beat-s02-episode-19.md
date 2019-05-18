@@ -12,6 +12,8 @@ cTrix and Professor Abrasive - Sega Saturn CD - Cracked after 20 years: [https:/
 
 All AVGN Episodes: [https://www.youtube.com/watch?v=V4we8iFk-fY&list=PLbQ-gSLYQEc6IWgKJNOMUONgtNXdwVcDC](https://www.youtube.com/watch?v=V4we8iFk-fY&list=PLbQ-gSLYQEc6IWgKJNOMUONgtNXdwVcDC)
 
+Spotify Playlist: [https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/5pFQnYXStuVd4vTOJa8uW4](https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/5pFQnYXStuVd4vTOJa8uW4)
+
 Photo by Thomas Ohlsson: [https://www.flickr.com/photos/donthomaso84/8411220281/](https://www.flickr.com/photos/donthomaso84/8411220281/)
 
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2F0xff-beat%2F0xff-beat-s02-episode-19%2F" frameborder="0" ></iframe>

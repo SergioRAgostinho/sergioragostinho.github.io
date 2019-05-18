@@ -8,6 +8,8 @@ header:
 
 Suspenders? Check. Bowties? Check. Flapper dresses and bowler hats? Check. Happy-go-lucky, retrofuturistic grooves, incoming. 😎
 
+Spotify Playlist: [https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/5W6IadLaPUdEkFF9vnHMl9?si=tz8Z5EZzQ-u7vt_P9kXSAQ](https://open.spotify.com/user/ati0dmiwljmdyhghmtm6dgfo5/playlist/5W6IadLaPUdEkFF9vnHMl9?si=tz8Z5EZzQ-u7vt_P9kXSAQ)
+
 Image by Dianne Intergarlictic: [https://www.flickr.com/photos/havisham/3174466589/in/photolist-5QvYjz-bWL3iw-xA4su-21XMz7b-e1SHnC-qzfRkN-9YCg87-8AGEPa-qP2r7Z-h9U6Mr-qhEYKD-76Jrux-4NxqE8-6YyntC-Emhfu-bHnVLP-qsUhQ1-qKibeV-qb7Z3N-skt6BG-qMC7Rx-6RuY6x-9APtbo-shfQw3-pJsz14-7njPrJ-sjvnZi-qhQXQn-qGqhBU-s8eMrM-qGqhK9-qz5aAB-vfuzr9-76eC9r-9sVVZ1-5YJnmm-qk7nCw-KeCNEA-rgwGcj-qiDEwF-s614qq-qkfxzX-s8YnDN-pDkJzZ-pV8SAG-iRk5W-6RyY4d-m94TWz-6SYbPV-9jsimx](https://www.flickr.com/photos/havisham/3174466589/in/photolist-5QvYjz-bWL3iw-xA4su-21XMz7b-e1SHnC-qzfRkN-9YCg87-8AGEPa-qP2r7Z-h9U6Mr-qhEYKD-76Jrux-4NxqE8-6YyntC-Emhfu-bHnVLP-qsUhQ1-qKibeV-qb7Z3N-skt6BG-qMC7Rx-6RuY6x-9APtbo-shfQw3-pJsz14-7njPrJ-sjvnZi-qhQXQn-qGqhBU-s8eMrM-qGqhK9-qz5aAB-vfuzr9-76eC9r-9sVVZ1-5YJnmm-qk7nCw-KeCNEA-rgwGcj-qiDEwF-s614qq-qkfxzX-s8YnDN-pDkJzZ-pV8SAG-iRk5W-6RyY4d-m94TWz-6SYbPV-9jsimx)
 
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2F0xff-beat%2F0xff-beat-s02-episode-18%2F" frameborder="0" ></iframe>
