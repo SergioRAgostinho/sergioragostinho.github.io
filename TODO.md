@@ -1,3 +1,0 @@
-- [ ] Add the bootstrap ml slides to the website /bootstrap-ml/slide/
-- [ ] Feeds for the podcast
-- [ ] Improve page for listing all tags and categories
