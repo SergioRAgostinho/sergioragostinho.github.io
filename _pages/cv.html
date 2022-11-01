@@ -13,12 +13,14 @@ header:
 ---
 {% assign cv = site.data.cv %}
 
+<small>You can download the latest version of my CV in pdf format <a href="/assets/pdf/cv.pdf">here</a>.</small>
+
 <h2 id="experience">Experience</h2>
 
 {% for item in cv.experience %}
 	<div class="wrapper">
 		<div class="display-inline-block">
-			<img class="align-left" src="{{ item.icon}}">
+			<img class="align-left" src="{{ item.icon}}" width="72px">
 			<div class="align-left">
 				<span class="color-darker-gray">{{ item.title }}</span>
 				<br>
@@ -48,8 +50,14 @@ header:
 					{{- ', ' -}}
 				{% endunless %}
 				{% assign names = author | split:' ' %}
+				{% if author contains site.author.name  %}<span style="font-weight: bold;">{% endif %}
 				{{- names.first | truncate: 1, "" -}}{{'. '}}{{- names.last -}}
+				{% if author contains site.author.name %}</span>{% endif %}
 			{% endfor %}
+			{% if item.acknowledgements %}
+				<br>
+				{{ item.acknowledgements }}
+			{% endif %}
 		</span>
 		<span class="color-light-gray">
 			<br>

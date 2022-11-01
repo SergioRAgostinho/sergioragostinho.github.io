@@ -1,4 +1,20 @@
 experience:
+  - title: "Senior Software Engineer"
+    company: "Argo AI"
+    icon: "/assets/images/logos/argo.svg"
+    location: "Munich, Germany"
+    date:
+      begin: "2022 Jun"
+      end: "ongoing"
+    description: "Developing LiDAR object detection and semantic segmentation models for autonomous vehicles."
+  - title: "Research Intern"
+    company: "Argo AI"
+    icon: "/assets/images/logos/argo.svg"
+    location: "Munich, Germany"
+    date:
+      begin: "2022 Feb"
+      end: "2022 Apr"
+    description: "Developing LiDAR semantic and panoptic segmentation models for mapping."
   - title: "Machine Learning Teaching Assistant"
     company: "Técnico Lisboa, Universidade de Lisboa"
     icon: "/assets/images/logos/ist.jpg"
@@ -57,6 +73,25 @@ education:
       end: "2013"
 
 publications:
+  - title: "Is Geometry Enough for Matching in Visual Localization?"
+    authors:
+      - "Qunjie Zhou†"
+      - "Sérgio Agostinho†"
+      - "Aljoša Ošep"
+      - "Laura Leal-Taixé"
+    acknowledgements: "† Equal contribution"
+    publisher: "European Conference on Computer Vision (ECCV)"
+    date: "2022 Oct"
+    url: "https://arxiv.org/abs/2203.12979"
+  - title: "[Oral] (Just) A Spoonful of Refinements Helps the Registration Error Go Down"
+    authors:
+      - "Sérgio Agostinho"
+      - "Aljoša Ošep"
+      - "Alessio Del-Bue"
+      - "Laura Leal-Taixé"
+    publisher: "International Conference on Computer Vision (ICCV)"
+    date: "2021 Oct"
+    url: "https://openaccess.thecvf.com/content/ICCV2021/html/Agostinho_Just_A_Spoonful_of_Refinements_Helps_the_Registration_Error_Go_ICCV_2021_paper.html"
   - title: "Augmented Reality for the Support of Space Exploration Missions and On-Ground/On-Orbit Operations"
     authors:
       - "Domenico Tedone"

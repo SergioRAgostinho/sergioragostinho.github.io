@@ -99,8 +99,8 @@ analytics:
 author:
   name             : "Sérgio Agostinho"
   avatar           : "/assets/images/sergio-photo.jpg"
-  bio              : "PhD Student in Object Pose Estimation. Point Cloud Library maintainer. Music enthusiast."
-  location         : "Lisbon, Portugal"
+  bio              : "Random guy working on LiDAR perception for Autonomous Vehicles. PhD student in correspondence-based pose estimation and geometric deep learning. Ex-Point Cloud Library maintainer. Music enthusiast."
+  location         : "Munich, Germany"
   email            : "sergio@sergioagostinho.com"
   uri              :
   bitbucket        :
