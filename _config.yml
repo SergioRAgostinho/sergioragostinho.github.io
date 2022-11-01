@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 github                   : [metadata]
-remote_theme             : "mmistakes/minimal-mistakes@4.12.0"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -159,6 +159,7 @@ defaults:
       related: true
       permalink: /blog/:path/
       toc_sticky: true
+      show_date: true
   # 0xff beat
   - scope:
       type: off-beat
@@ -272,10 +273,11 @@ timezone: +3843-00908 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zo
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
   - jemoji
 
 # mimic GitHub Pages with --safe

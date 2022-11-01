@@ -12,6 +12,8 @@ header:
   caption: "credits: [CycleGAN by Jun-Yan Zhu and Taesung Park](https://github.com/junyanz/CycleGAN)"
 ---
 
+<small>This is the page for a workshop I gave in 2018 introducing Machine Learning. I'm just keeping this around for archival purposes.</small>
+
 ## Hello
 
 Welcome to `Bootstrap ML`, a ~~two~~ three hour introductory session to help you take your first steps in Machine Learning (ML), one of the most popular fields of our time. Your daily life is filled with applications and use cases which can be leveraged with ML and in this session we'll learn how to identify them and map them to the ML domain.
