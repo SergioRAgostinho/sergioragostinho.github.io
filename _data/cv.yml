@@ -92,6 +92,14 @@ publications:
     publisher: "International Conference on Computer Vision (ICCV)"
     date: "2021 Oct"
     url: "https://openaccess.thecvf.com/content/ICCV2021/html/Agostinho_Just_A_Spoonful_of_Refinements_Helps_the_Registration_Error_Go_ICCV_2021_paper.html"
+  - title: "CvxPnPL: A Unified Convex Solution to the Absolute Pose Estimation Problem from Point and Line Correspondences"
+    authors:
+      - "Sérgio Agostinho"
+      - "João Pedro Gomes"
+      - "Alessio Del-Bue"
+    publisher: "To appear on the Journal of Mathematical Imaging and Vision"
+    date: "Submitted May 2020"
+    url: "https://arxiv.org/abs/1907.10545"
   - title: "Augmented Reality for the Support of Space Exploration Missions and On-Ground/On-Orbit Operations"
     authors:
       - "Domenico Tedone"
