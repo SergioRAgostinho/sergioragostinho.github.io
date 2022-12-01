@@ -24,9 +24,9 @@ breadcrumbs_home_label   : "Home"
 breadcrumbs_separator    : "/"
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : giscus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : sergioagostinho
+    shortname            :
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -34,6 +34,13 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+  giscus:
+    repo_id              : MDEwOlJlcG9zaXRvcnk2MzE4ODA5Ng== # Shown during giscus setup at https://giscus.app
+    category_name        : Posts # Full text name of the category
+    category_id          : DIC_kwDOA8QsgM4CS3O7 # Shown during giscus setup at https://giscus.app
+    discussion_term      : og:title # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : '1' # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
