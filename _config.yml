@@ -108,32 +108,29 @@ author:
   avatar           : "/assets/images/sergio-photo.jpg"
   bio              : "Random guy working on LiDAR perception for Autonomous Vehicles. PhD student in correspondence-based pose estimation and geometric deep learning. Ex-Point Cloud Library maintainer. Music enthusiast."
   location         : "Munich, Germany"
-  email            : "sergio@sergioagostinho.com"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : SergioRAgostinho
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         : sergioagostinho
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
-  twitter          : sragostinho
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-  mixcloud         : "sérgio-agostinho"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:sergio@sergioagostinho.com
+    - label: PGP Public Key
+      icon: "fas fa-fw fa-user-secret"
+      url: /assets/public.txt
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: https://www.linkedin.com/in/sergioagostinho
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: https://github.com/SergioRAgostinho
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: https://mastodon.world/@sagostinho
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: https://twitter.com/sragostinho
+    - label: "Mixcloud"
+      icon: "fab fa-fw fa-mixcloud"
+      url: https://www.mixcloud.com/0xff-beat
 
 # Collections
 collections:
