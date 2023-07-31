@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Sérgio Agostinho"
   avatar           : "/assets/images/sergio-photo.jpg"
-  bio              : "Random guy working on LiDAR perception for Autonomous Vehicles. PhD student in correspondence-based pose estimation and geometric deep learning. Ex-Point Cloud Library maintainer. Music enthusiast."
+  bio              : "LiDAR Perception Tech Lead at Argo AI in Munich. PhD student in correspondence-based pose estimation and geometric deep learning. Ex-Point Cloud Library maintainer. Music and Homelab enthusiast."
   location         : "Munich, Germany"
   email            :
   links:

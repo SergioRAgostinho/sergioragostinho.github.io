@@ -1,11 +1,19 @@
 experience:
+  - title: "LiDAR Perception Tech Lead"
+    company: "Argo AI"
+    icon: "/assets/images/logos/argo.svg"
+    location: "Munich, Germany"
+    date:
+      begin: "2023 Feb"
+      end: "ongoing"
+    description: "Leading the development in LiDAR panoptic segmentation and occupancy detection models for autonomous vehicles."
   - title: "Senior Software Engineer"
     company: "Argo AI"
     icon: "/assets/images/logos/argo.svg"
     location: "Munich, Germany"
     date:
       begin: "2022 Jun"
-      end: "ongoing"
+      end: "2023 Jan"
     description: "Developing LiDAR object detection and semantic segmentation models for autonomous vehicles."
   - title: "Research Intern"
     company: "Argo AI"
@@ -97,8 +105,8 @@ publications:
       - "Sérgio Agostinho"
       - "João Pedro Gomes"
       - "Alessio Del-Bue"
-    publisher: "To appear on the Journal of Mathematical Imaging and Vision"
-    date: "Submitted May 2020"
+    publisher: "Journal of Mathematical Imaging and Vision"
+    date: "2022 Nov (Submitted May 2020)"
     url: "https://arxiv.org/abs/1907.10545"
   - title: "Augmented Reality for the Support of Space Exploration Missions and On-Ground/On-Orbit Operations"
     authors:
